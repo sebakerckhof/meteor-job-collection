@@ -13,8 +13,12 @@ Package.describe({
   git: 'https://github.com/vsivsi/meteor-job-collection.git'
 });
 
+Npm.depends({
+  later: '1.2.0'
+});
+
 Package.onUse(function(api) {
-  api.use('mrt:later@1.6.1', ['server','client']);
+  //api.use('mrt:later@1.6.1', ['server','client']);
   api.use('coffeescript@1.12.6_1', ['server','client']);
   api.use('mongo@1.1.18', ['server','client']);
   api.use('check@1.2.5', ['server','client']);
@@ -28,7 +32,7 @@ Package.onUse(function(api) {
 
 Package.onTest(function (api) {
   api.use('vsivsi:job-collection@' + currentVersion, ['server','client']);
-  api.use('mrt:later@1.6.1', ['server','client']);
+  //api.use('mrt:later@1.6.1', ['server','client']);
   api.use('coffeescript@1.12.6_1', ['server','client']);
   api.use('check@1.2.5', ['server','client']);
   api.use('tinytest@1.0.12', ['server','client']);
