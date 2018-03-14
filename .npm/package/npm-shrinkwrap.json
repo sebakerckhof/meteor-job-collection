@@ -1,0 +1,10 @@
+{
+  "lockfileVersion": 1,
+  "dependencies": {
+    "meteor-job": {
+      "version": "1.5.2",
+      "resolved": "https://bin.barco.com/artifactory/api/npm/npm-virtual/meteor-job/-/meteor-job-1.5.2.tgz",
+      "integrity": "sha1-jC7/EszN0CH4Mt1hgwGuE9XGCEw="
+    }
+  }
+}

@@ -249,7 +249,7 @@ class JobCollectionBase extends Mongo.Collection
           fields:
             depends: 1
           transform: null
-        }
+        },
       ).forEach (d) -> antsArray.push(i) for i in d.depends unless i in antsArray
       if antsArray.length > 0
         dependsQuery.push
