@@ -8,9 +8,9 @@ var currentVersion = '1.5.2';
 
 Package.describe({
   summary: "A persistent and reactive job queue for Meteor, supporting distributed workers that can run anywhere",
-  name: 'vsivsi:job-collection',
+  name: 'simonsimcity:job-collection',
   version: currentVersion,
-  git: 'https://github.com/vsivsi/meteor-job-collection.git'
+  git: 'https://github.com/simonsimcity/meteor-job-collection.git'
 });
 
 Package.onUse(function(api) {
