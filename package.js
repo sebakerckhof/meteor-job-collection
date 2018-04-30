@@ -27,7 +27,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function (api) {
-  api.use('vsivsi:job-collection@' + currentVersion, ['server','client']);
+  api.use('simonsimcity:job-collection@' + currentVersion, ['server','client']);
   api.use('mrt:later@1.6.1', ['server','client']);
   api.use('coffeescript@1.12.6_1', ['server','client']);
   api.use('check@1.2.5', ['server','client']);
