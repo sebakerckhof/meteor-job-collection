@@ -49,6 +49,7 @@ modules-runtime@0.9.2
 mongo@1.4.7
 mongo-dev-server@1.1.0
 mongo-id@1.0.7
+mrt:later@1.6.1
 npm-mongo@2.2.34
 ordered-dict@1.1.0
 practicalmeteor:mocha-core@1.0.1

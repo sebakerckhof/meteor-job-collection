@@ -4,8 +4,6 @@
 #     See included LICENSE file for details.
 ############################################################################
 
-later = Npm.require 'later'
-
 _validNumGTEZero = (v) ->
   Match.test(v, Number) and v >= 0.0
 

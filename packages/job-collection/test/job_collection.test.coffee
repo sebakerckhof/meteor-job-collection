@@ -1,5 +1,4 @@
-chai = Npm.require 'chai'
-assert = chai.assert
+import { assert } from 'chai'
 
 ############################################################################
 #     Copyright (C) 2014-2017 by Vaughn Iverson

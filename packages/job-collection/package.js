@@ -14,6 +14,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
+  api.use('mrt:later@1.6.1', ['server','client']);
   api.use('coffeescript@2.0.3_3', ['server','client']);
   api.use('ecmascript@0.9.0', ['server','client']);
   api.use('mongo@1.1.18', ['server','client']);
@@ -25,13 +26,11 @@ Package.onUse(function(api) {
   api.export('Job');
   api.export('JobCollection');
 
-  Npm.depends({
-    later: '1.2.0',
-  });
 });
 
 Package.onTest(function (api) {
   api.use('simonsimcity:job-collection@' + currentVersion, ['server','client']);
+  api.use('mrt:later@1.6.1', ['server','client']);
   api.use('coffeescript@2.0.3_3', ['server','client']);
   api.use('ecmascript@0.9.0', ['server','client']);
   api.use('check@1.2.5', ['server','client']);
@@ -39,7 +38,6 @@ Package.onTest(function (api) {
   api.use('ddp@1.2.5', 'client');
 
   Npm.depends({
-    later: '1.2.0',
     chai: '4.1.2',
   });
 
