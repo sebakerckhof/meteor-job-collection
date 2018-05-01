@@ -35,7 +35,7 @@ Package.onTest(function (api) {
   api.use('coffeescript@2.0.3_3', ['server','client']);
   api.use('ecmascript@0.9.0', ['server','client']);
   api.use('check@1.2.5', ['server','client']);
-  api.use('meteortesting:mocha@0.4.1', ['server','client']);
+  api.use('meteortesting:mocha@1.0.0', ['server','client']);
   api.use('ddp@1.2.5', 'client');
 
   Npm.depends({
@@ -43,5 +43,5 @@ Package.onTest(function (api) {
     chai: '4.1.2',
   });
 
-  api.addFiles('test/job_collection_tests.coffee', ['server', 'client']);
+  api.addFiles('test/job_collection.test.coffee', ['server', 'client']);
 });
