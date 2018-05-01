@@ -245,7 +245,14 @@ To run tests (using Meteor `meteortesting:mocha`) run from within the `packages/
 
     meteor test-packages ./ --driver-package meteortesting:mocha
 
-Load `http://localhost:3000/` to run the client-tests in the browser or follow the instructions on https://github.com/meteortesting/meteor-mocha#run-client-tests-headless.
+Or run the meteor-app this repository contains:
+
+    npm run test
+
+    # Logical OR was added because some tests currently fail.
+    npm run coverage || npm run coverage:html
+
+In case you ran the last line in your shell, you can find the coverage report in the `.coverage/lcov-report` folder.
 
 A basic sample application that implements a basic image gallery with upload/download support and
 automatic generation of thumbnail images is available. It also implements a basic job manager UI

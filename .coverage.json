@@ -1,0 +1,6 @@
+
+{
+  "include": [
+    "**/packages/simonsimcity_job-collection.js"
+  ]
+}

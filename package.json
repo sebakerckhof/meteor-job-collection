@@ -1,0 +1,21 @@
+{
+  "name": "meteor-job-collection-test",
+  "private": true,
+  "scripts": {
+    "coverage": "npm run coverage:app-unit && npm run coverage:app-full && npm run coverage:html",
+    "coverage:app-unit": "COVERAGE=1 COVERAGE_APP_FOLDER=$PWD/ COVERAGE_OUT_COVERAGE=true COVERAGE_OUT_JSON=true TEST_BROWSER_DRIVER=phantomjs meteor test --once --driver-package meteortesting:mocha --raw-logs",
+    "coverage:app-full": "COVERAGE=1 COVERAGE_APP_FOLDER=$PWD/ COVERAGE_IN_COVERAGE=true  COVERAGE_OUT_JSON=true TEST_BROWSER_DRIVER=phantomjs meteor test --once --driver-package meteortesting:mocha --raw-logs --full-app",
+    "coverage:html": "istanbul report --include .coverage/summary.json --root . --dir .coverage",
+    "test": "TEST_BROWSER_DRIVER=phantomjs meteor test --driver-package meteortesting:mocha --raw-logs --once",
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.42",
+    "meteor-node-stubs": "^0.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "istanbul": "^0.4.5",
+    "phantomjs-prebuilt": "^2.1.16"
+  }
+}
