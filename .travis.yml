@@ -6,6 +6,8 @@ before_install:
   - "curl https://install.meteor.com/ | sh"
 before_script:
   - "export PATH=$HOME/.meteor:$PATH"
+  - "meteor npm install"
 
 script:
   - "meteor test-packages packages/job-collection --driver-package meteortesting:mocha --once"
+  - "meteor npm test"
