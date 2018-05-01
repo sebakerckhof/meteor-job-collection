@@ -1,10 +1,14 @@
 ## Revision history
 
-#### NEXT
+#### 1.6.1
 
-* Package updated to CoffeeScript 2. Now is required to create an instance
-  of the class with `new JobCollection`, just calling `JobCollection` does
-  not work anymore. Same for `new Job`.
+* Replaced npm package `later` back by the equivalent atmosphere package after encounting major problems on the client side
+
+#### 1.6.0
+
+* Replaced meteor package `later` by the equivalent npm package
+* Package updated to CoffeeScript 2. Now is required to create an instance of the class with `new JobCollection`, just calling `JobCollection` does not work anymore. Same for `new Job`.
+* Replaced `tinytest` by `meteortesting:mocha` to run tests including code coverage
 
 #### 1.5.2
 

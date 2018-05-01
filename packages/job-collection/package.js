@@ -4,12 +4,13 @@
 ###     See included LICENSE file for details.
 ***************************************************************************/
 
-var currentVersion = '1.6.0';
+var currentVersion = '1.6.1';
 
 Package.describe({
   summary: "A persistent and reactive job queue for Meteor, supporting distributed workers that can run anywhere",
   name: 'simonsimcity:job-collection',
   version: currentVersion,
+  documentation: '../../README.md',
   git: 'https://github.com/simonsimcity/meteor-job-collection.git'
 });
 
