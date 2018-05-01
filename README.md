@@ -1,6 +1,6 @@
 # job-collection
 
-[![Build Status](https://travis-ci.org/vsivsi/meteor-job-collection.svg)](https://travis-ci.org/vsivsi/meteor-job-collection)
+[![Build Status](https://travis-ci.org/SimonSimCity/meteor-job-collection.svg)](https://travis-ci.org/simonsimcity/meteor-job-collection)
 
 ## Notice!
 
@@ -241,7 +241,7 @@ To add to your project, run:
 
 The package exposes a global object `JobCollection` on both client and server.
 
-To run tests (using Meteor `meteortesting:mocha`) run from within the `job-collection` subdirectory:
+To run tests (using Meteor `meteortesting:mocha`) run from within the `packages/job-collection` subdirectory:
 
     meteor test-packages ./ --driver-package meteortesting:mocha
 
