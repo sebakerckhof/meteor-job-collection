@@ -1094,7 +1094,7 @@ class JobCollectionBase extends Mongo.Collection {
         return null;
       }
       doc.after = nextDate;
-    } else if ((this.later == null) && (doc.repeatWait !== 'number')) {
+    } else if ((this.later == null) && (typeof doc.repeatWait !== 'number')) {
       console.warn("Later.js not loaded...");
       return null;
     }
