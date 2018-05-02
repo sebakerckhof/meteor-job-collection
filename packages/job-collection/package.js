@@ -20,8 +20,8 @@ Package.onUse(function(api) {
   api.use('ecmascript@0.9.0', ['server','client']);
   api.use('mongo@1.1.18', ['server','client']);
   api.use('check@1.2.5', ['server','client']);
-  api.mainModule('src/server.coffee', 'server');
-  api.mainModule('src/client.coffee', 'client');
+  api.mainModule('src/server.js', 'server');
+  api.mainModule('src/client.js', 'client');
 
   // Make both Job and JobCollection publicly available
   api.export('Job');
@@ -42,5 +42,5 @@ Package.onTest(function (api) {
     chai: '4.1.2',
   });
 
-  api.addFiles('test/job_collection.test.coffee', ['server', 'client']);
+  api.addFiles('test/job_collection.test.js', ['server', 'client']);
 });
