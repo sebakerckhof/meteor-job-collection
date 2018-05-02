@@ -20,10 +20,10 @@ Package.onUse(function(api) {
   api.use('ecmascript@0.9.0', ['server','client']);
   api.use('mongo@1.1.18', ['server','client']);
   api.use('check@1.2.5', ['server','client']);
-  api.addFiles('job/src/job_class.coffee', ['server','client']);
-  api.addFiles('src/shared.coffee', ['server','client']);
-  api.addFiles('src/server.coffee', 'server');
-  api.addFiles('src/client.coffee', 'client');
+  api.mainModule('src/server.coffee', 'server');
+  api.mainModule('src/client.coffee', 'client');
+
+  // Make both Job and JobCollection publicly available
   api.export('Job');
   api.export('JobCollection');
 

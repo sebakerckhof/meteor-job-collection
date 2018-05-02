@@ -4,6 +4,8 @@
 #     See included LICENSE file for details.
 ############################################################################
 
+import Job from '../job/src/job_class'
+
 _validNumGTEZero = (v) ->
   Match.test(v, Number) and v >= 0.0
 
@@ -1286,6 +1288,4 @@ class JobCollectionBase extends Mongo.Collection
       console.warn "jobFail failed"
     return false
 
-# Share these methods so they'll be available on server and client
-
-share.JobCollectionBase = JobCollectionBase
+export default JobCollectionBase;

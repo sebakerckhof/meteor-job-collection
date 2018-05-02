@@ -4,6 +4,9 @@
 #     See included LICENSE file for details.
 ############################################################################
 
+import Job from '../job/src/job_class'
+import JobCollectionBase from './shared'
+
 if Meteor.isClient
 
   # This is a polyfill for bind(), added to make phantomjs 1.9.7 work
@@ -27,7 +30,7 @@ if Meteor.isClient
   ################################################################
   ## job-collection client class
 
-  class JobCollection extends share.JobCollectionBase
+  class JobCollection extends JobCollectionBase
 
     constructor: (root = 'queue', options = {}) ->
       # Call super's constructor
@@ -44,3 +47,5 @@ if Meteor.isClient
     _toLog: (userId, method, message) =>
       if @logConsole
         console.log "#{new Date()}, #{userId}, #{method}, #{message}\n"
+
+export { Job, JobCollection };

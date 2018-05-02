@@ -4,6 +4,9 @@
 #     See included LICENSE file for details.
 ############################################################################
 
+import Job from '../job/src/job_class'
+import JobCollectionBase from './shared'
+
 if Meteor.isServer
 
   eventEmitter = Npm.require('events').EventEmitter
@@ -17,7 +20,7 @@ if Meteor.isServer
   ################################################################
   ## job-collection server class
 
-  class JobCollection extends share.JobCollectionBase
+  class JobCollection extends JobCollectionBase
 
     constructor: (root = 'queue', options = {}) ->
       # Call super's constructor
@@ -193,3 +196,5 @@ if Meteor.isServer
       # Change jobs from waiting to ready when their time has come
       # and dependencies have been satisfied
       @readyJobs()
+
+export { Job, JobCollection };
